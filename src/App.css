@@ -1,3 +1,36 @@
+@import './assets/scss/colors';
+
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color:var(color1) ;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: var(color6);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -16,6 +49,36 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+a {
+  text-decoration: none;
+}
+
+.balance {
+  text-wrap: balance;
+}
+
+.btn-primary {
+  background-color: var(color3);
+  border-color: var(color3);
+
+  &:hover {
+    background-color: var(color2);
+  }
+}
+
+.minusDisplayPlus {
+  & .btn-primary {
+    width: 36px;
+    height: 40px;
+  }
+
+  & span {
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+  }
 }
 
 @keyframes logo-spin {
@@ -40,3 +103,4 @@
 .read-the-docs {
   color: #888;
 }
+
